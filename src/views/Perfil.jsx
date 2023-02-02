@@ -16,6 +16,8 @@ export default function Home() {
       const { data } = await axios.get(urlServer + endpoint, {
         headers: { Authorization: "Bearer " + token },
       });
+      console.log("getUsuarioData:"+token)
+      console.log(data);
       setUsuarioGlobal(data);
       setUsuarioLocal(data);
     } catch ({ response: { data: message } }) {
