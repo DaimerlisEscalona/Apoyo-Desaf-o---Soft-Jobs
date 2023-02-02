@@ -16,7 +16,7 @@ export default function RegistroForm() {
   };
 
   const iniciarSesion = async () => {
-    const urlServer = "https://desafio-soft-jobs-back-production.up.railway.app/";
+    const urlServer = "desafio-soft-jobs-back-production.up.railway.app";
     const endpoint = "/login";
     const { email, password } = usuario;
     try {
